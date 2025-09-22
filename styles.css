@@ -1639,3 +1639,10 @@ max-width: 100%;
   .phone-notch { height: 14px; }
   .phone-speaker { width: 30px; }
 }
+
+.buy-logo {
+    max-width: 235px;   /* controla a largura máxima */
+    height: auto;       /* mantém a proporção da imagem */
+    margin: 10px auto;  /* centraliza e dá respiro */
+    display: block;     /* garante alinhamento */
+}

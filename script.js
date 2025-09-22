@@ -360,10 +360,10 @@ function generateResponse(message) {
     
     // Cat responses
     const catResponses = {
-        'preço': 'Miau! O xampu Liv Lev está com preço especial! Você pode comprar pelo Mercado Pago com parcelamento ou pelo WhatsApp com desconto especial! 😺',
+        'preço': 'Miau! O xampu Liv Lev está com preço especial! Você pode comprar pelo Mercado Livre com parcelamento ou pelo WhatsApp com desconto especial! 😺',
         'coceira': '*se coça e para* Antes do Liv Lev eu vivia me coçando! Agora minha pele está saudável e sem irritações. É incrível! 😸',
         'natural': 'Miau, sim! É 100% natural com mastruz, própolis e óleo de babaçu. Nada de química agressiva que irrita nossa pele sensível! 🌿',
-        'comprar': 'Você pode comprar pelo Mercado Pago (parcela em até 5x) ou WhatsApp para um atendimento especial! Eu recomendo! 😻',
+        'comprar': 'Você pode comprar pelo Mercado Livre (parcela em até 5x) ou WhatsApp para um atendimento especial! Eu recomendo! 😻',
         'especial': 'Liv Lev é especial porque é feito com amor e ciência! As fundadoras são incríveis e pensaram em tudo para nós, pets! 💙',
         'cheiro': '*fareja* Tem um cheirinho suave e natural que dura dias! Nada daqueles perfumes fortes que me fazem espirrar! 😹',
         'pelos': 'Meus pelos nunca estiveram tão macios e brilhantes! O mastruz estimula o crescimento saudável. Olha como estou lindo! ✨',
@@ -373,10 +373,10 @@ function generateResponse(message) {
     
     // Dog responses
     const dogResponses = {
-        'preço': 'AU AU! O preço está ótimo! Tem desconto especial pelo WhatsApp e pode parcelar pelo Mercado Pago! 🐕',
+        'preço': 'AU AU! O preço está ótimo! Tem desconto especial pelo WhatsApp e pode parcelar pelo Mercado Livre! 🐕',
         'pelos longos': 'AU AU! Funciona super bem! Tenho amigos Golden e Pastor Alemão que usam e os pelos ficaram incríveis! 🐕',
         'natural': 'Au au! É 100% natural! Sem químicas que irritam. Minha tutora adora porque é seguro! 🌱',
-        'comprar': 'AU AU! Você pode comprar pelo Mercado Pago ou WhatsApp! Eu ganhei o meu pelo WhatsApp e chegou rapidinho! 📦',
+        'comprar': 'AU AU! Você pode comprar pelo Mercado Livre ou WhatsApp! Eu ganhei o meu pelo WhatsApp e chegou rapidinho! 📦',
         'cheiro': 'AU AU! O cheiro é maravilhoso! Natural e suave, não é enjoativo. Fico cheiroso por dias! 🌸',
         'funciona': 'Funciona MUITO! Eu tinha dermatite e melhorou tudo! Agora só uso Liv Lev! ⭐',
         'coceira': 'Antes eu vivia me coçando, agora acabou! O mastruz é incrível para a pele! 🐾',
@@ -438,9 +438,9 @@ function updateSuggestions() {
                     sendSuggestion(suggestion);
                     setTimeout(() => {
                         if (currentAssistant === 'cat') {
-                            addBotMessage('Miau! Ótima escolha! 😺<br><br>🛒 Mercado Pago (parcelado): <a href="https://produto.mercadolivre.com.br/MLB-4160297527-shampoo-natural-mastruz-propolis-para-ces-e-gatos-_JM?utm_source=bio_libre&utm_medium=Referral&utm_campaign=general_link" target="_blank">Clique aqui</a><br><br>💚 WhatsApp (com desconto): <a href="https://api.whatsapp.com/send/?phone=559882007986" target="_blank">Clique aqui</a>');
+                            addBotMessage('Miau! Ótima escolha! 😺<br><br>🛒 Mercado Livre (parcelado): <a href="https://produto.mercadolivre.com.br/MLB-4160297527-shampoo-natural-mastruz-propolis-para-ces-e-gatos-_JM?utm_source=bio_libre&utm_medium=Referral&utm_campaign=general_link" target="_blank">Clique aqui</a><br><br>💚 WhatsApp (com desconto): <a href="https://api.whatsapp.com/send/?phone=559882007986" target="_blank">Clique aqui</a>');
                         } else {
-                            addBotMessage('AU AU! Que legal! 🐕<br><br>🛒 Mercado Pago (parcelado): <a href="https://biolivre.com.br/livlev" target="_blank">Clique aqui</a><br><br>💚 WhatsApp (com desconto): <a href="https://api.whatsapp.com/send/?phone=559882007986" target="_blank">Clique aqui</a>');
+                            addBotMessage('AU AU! Que legal! 🐕<br><br>🛒 Mercado Livre (parcelado): <a href="https://biolivre.com.br/livlev" target="_blank">Clique aqui</a><br><br>💚 WhatsApp (com desconto): <a href="https://api.whatsapp.com/send/?phone=559882007986" target="_blank">Clique aqui</a>');
                         }
                     }, 1000);
                 } else if (suggestion === 'Falar com humano') {
