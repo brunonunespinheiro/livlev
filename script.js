@@ -219,10 +219,10 @@ window.openChat = function(type) {
     // Setup chat based on assistant type
     if (type === 'cat') {
         avatar.src = 'chat-cat.png';
-        name.textContent = 'Blue';
+        name.textContent = 'Liv';
     } else {
         avatar.src = 'chat-dog.png';
-        name.textContent = 'Verde';
+        name.textContent = 'Lev';
     }
     
     // Show modal
